@@ -1,0 +1,213 @@
+nav ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+   
+    padding: 10px 0px;
+}
+li{
+    list-style: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+
+}
+li:hover{
+    border-bottom: 2px solid red;
+    color: red;
+    /* transition: all ease-in-out 2s; */
+}
+li a {
+    text-decoration: none;
+    color: red;
+    
+}
+.main-title{
+    text-align: center;
+    font-size: 30px;
+}
+
+/* card styling */
+.card_container{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap:wrap ;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 5px;
+  
+ 
+    /* background-color: ; */
+}
+
+.card {
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background-color: rgb(230, 224, 224);
+  
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 15px;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.card a {
+    display: inline-block;
+    padding: 3px 30px;
+    background: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.card a:hover {
+    background: #0056b3;
+}
+
+@media (max-width: 400px) {
+    .card {
+        width: 90%;
+    }
+}
+@media (max-width: 600px) {
+    .card_container{
+        flex-direction: column;
+        align-items: center;
+        height: fit-content;
+    }
+}
+
+/* form style */
+
+.form-container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    max-height: 100vh;
+    margin:10px auto;
+    width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.form-container h2 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: none;
+    height: 100px;
+}
+
+.form-group input[type="file"] {
+    padding: 5px;
+}
+.form-group select{
+    padding: 12px 15px;
+    border-radius: 5px;
+}
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background: #df5607;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-group button:hover {
+    background: #722609;
+}
+
+@media (max-width: 600px) {
+    .form-container {
+        width: 90%;
+    }
+}
+.page-container{
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+}
+.page{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+
+}
+.page-image{
+    object-fit: cover;
+    border-radius: 8px;
+    max-width: 100%;
+    height: 500px;
+
+}
+.page .page-title{
+    font-size: 30px;
+ 
+}
+.page .date{
+    margin-top: -25px;
+    color: #666;
+}
+.page .description{
+    margin-top: -25px;
+    line-height: 10px;
+    letter-spacing: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
